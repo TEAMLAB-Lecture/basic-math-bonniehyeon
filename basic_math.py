@@ -6,8 +6,6 @@
 여기서 간단한 수학을 하는 프로그램을 만들것입니다. 
 """
 
-import numpy as np
-
 
 def get_greatest(number_list):
     """
@@ -92,5 +90,5 @@ def get_median(number_list):
             >>> bm.get_median(number_list2)
             35.5
     """
-    median = np.median(number_list)
+    median = number_list[1]
     return median
