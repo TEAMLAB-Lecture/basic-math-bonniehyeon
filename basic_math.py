@@ -90,5 +90,12 @@ def get_median(number_list):
             >>> bm.get_median(number_list2)
             35.5
     """
-    median = number_list[1]
+    number_list.sort()
+    len_list = len(number_list)
+    if len_list%2 == 0:
+        midpoint = len_list//2
+        median = number_list[midpoint-1] + number_list[midpoint]
+        median /= 2
+    else
+        median = number_list[len_list//2]
     return median
